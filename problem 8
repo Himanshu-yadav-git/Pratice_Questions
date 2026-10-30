@@ -1,0 +1,11 @@
+# Practice Problem: Write a program that takes a string and reverses it (e.g., “Python” becomes “nohtyP”).
+
+#code 
+
+text = "Python"
+reverse = ""
+
+for i in range(len(text)-1, -1, -1):
+    reverse += text[i]
+
+print(reverse)
