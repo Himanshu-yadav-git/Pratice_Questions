@@ -1,0 +1,9 @@
+# Practice Problem: Iterate through a given list of numbers and print only those numbers which are divisible by 5.
+
+#code 
+
+nums = [10, 23, 45, 67, 80, 32, 15, 9]
+
+for i in nums:
+    if i % 5 == 0:
+        print(i)
