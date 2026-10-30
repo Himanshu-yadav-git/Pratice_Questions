@@ -1,0 +1,13 @@
+# Practice Problem: Write a script that takes a list containing duplicate items and returns a new list with only unique elements.
+
+#code 
+
+nums = [4, 2, 4, 5, 2, 6, 5, 7]
+
+unique = []
+
+for i in nums:
+    if i not in unique:
+        unique.append(i)
+
+print(unique)
