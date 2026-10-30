@@ -1,0 +1,10 @@
+# Practice Problem: Write a program to swap the values of two variables, a and b, without using a third temporary variable.
+# code
+
+a = 10
+b = 20
+
+a, b = b, a
+
+print("a =", a)
+print("b =", b)
