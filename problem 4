@@ -1,0 +1,10 @@
+# Practice Problem: Write a function to remove characters from a string starting from index 0 up to n and return a new string.
+# Code 
+
+def remove_chars(text, n):
+    new_string = text[n:]
+    return new_string
+
+
+print(remove_chars("Python", 3))
+print(remove_chars("Programming", 4))
