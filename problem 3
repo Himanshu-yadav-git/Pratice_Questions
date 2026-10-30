@@ -1,0 +1,7 @@
+# Practice Problem: Display only those characters which are present at an even index number in given string.
+# code
+
+text = "PYTHON"
+
+for i in range(0, len(text), 2):
+    print(text[i])
