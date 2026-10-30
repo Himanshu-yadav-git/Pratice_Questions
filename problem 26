@@ -1,0 +1,10 @@
+# Practice Problem: Write a program that takes two separate dictionaries and merges them into one single dictionary
+
+# code
+
+dict1 = {'a': 10, 'b': 20, 'c': 30}
+dict2 = {'d': 40, 'e': 50, 'f': 60}
+
+dict1.update(dict2)
+
+print(dict1)
