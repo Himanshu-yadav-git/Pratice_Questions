@@ -1,0 +1,19 @@
+# Find the largest and second-largest distinct elements in a list without using sort() or max()
+
+#code 
+
+nums = [55,32,-97,99,3,67]
+n = len(nums)
+highest = float("-inf")
+second_highest = float("-inf")
+
+for i in range(0,n):
+    if nums[i] > highest:
+        highest = nums[i]
+
+for i in range(0,n):
+    if nums[i] > second_highest and nums[i] != highest:
+        second_highest = nums[i]
+
+print(highest)
+print(second_highest)
