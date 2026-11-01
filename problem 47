@@ -1,0 +1,17 @@
+# Given an array of integers, write a Python program to remove all duplicate elements and return a new array containing only the unique elements.
+
+# code 
+
+nums = [1,1,1,2,3,4,4,7,9,9,9,10]
+
+freq_map = {}
+
+for num in nums:
+    if num in freq_map:
+        freq_map[num] += 1
+    else:
+        freq_map[num] = 1
+
+unique_nums = list(freq_map.keys())
+
+print(unique_nums)
