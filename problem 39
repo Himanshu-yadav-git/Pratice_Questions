@@ -1,0 +1,14 @@
+# Write a Python program to sort a list of integers in ascending order using the Bubble Sort algorithm without using built-in sorting functions.
+
+#code 
+
+nums = [5,8,1,6,9,2,4]
+n = len(nums)
+
+for i in range(0,n-1):
+    for j in range(0,n-1):
+        if nums[j] > nums[j+1]:
+            nums[j],nums[j+1] = nums[j+1], nums[j]
+
+        
+print(nums)
