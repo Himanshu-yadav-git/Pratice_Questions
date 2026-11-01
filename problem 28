@@ -1,0 +1,13 @@
+# Write a Python program that takes a positive integer as input and counts the total number of digits present in that number using a while loop.
+
+#code 
+
+n = 59564
+count = 0
+
+while n > 0:
+    digit = n %10
+    n = n // 10
+    count += 1
+
+print(count)
