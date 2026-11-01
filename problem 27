@@ -1,0 +1,10 @@
+# Write a Python program that takes a positive integer as input and prints each digit of the number separately in reverse order.
+
+#code 
+
+n = 58763
+
+while n > 0:
+    n1 = n % 10
+    print(n1)
+    n = n // 10
