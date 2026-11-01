@@ -1,0 +1,18 @@
+# Find the largest and second-largest distinct elements in an array using a single loop, without using sort() or max().
+
+#code (2nd method)
+
+nums = [55,32,-97,99,3,67]
+n = len(nums)
+highest = float("-inf")
+second_highest = float("-inf")
+
+for i in range(0,n):
+    if nums[i] > highest:
+        second_highest = highest
+        highest = nums[i]
+    elif nums[i] > second_highest and nums[i] != highest:
+        second_highest = nums[i]
+        
+print(highest)
+print(second_highest)
