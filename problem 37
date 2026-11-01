@@ -1,0 +1,12 @@
+# Write a Python function that calculates the Nth Fibonacci number using recursion.
+
+# The Fibonacci sequence is formed by adding the previous two numbers to get the next number.
+
+#code 
+
+def fxn(n):
+    if n == 0 or n == 1:
+        return n
+    return fxn(n-1)+ fxn(n-2)
+
+print(fxn(10))
