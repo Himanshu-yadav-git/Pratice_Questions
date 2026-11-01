@@ -1,0 +1,12 @@
+# Write a Python function that takes an integer N and prints all numbers from 1 to N in ascending order using recursion, without using a loop.
+
+#code 
+
+def fxn(i,n):
+    if i>n:
+        return
+    print(i)
+
+    fxn(i+1,n)
+
+fxn(1,10)
