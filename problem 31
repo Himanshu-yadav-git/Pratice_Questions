@@ -1,0 +1,12 @@
+# Write a Python function that takes two integers, x and n, and prints the value of x exactly n times using recursion (without using a loop).
+
+#code 
+
+def fxn(x,n):
+    if n == 0:
+        return
+    print(x)
+
+    fxn(x,n-1)
+
+fxn(5,10)
