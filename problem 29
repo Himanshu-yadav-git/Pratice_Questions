@@ -1,0 +1,13 @@
+# Write a Python program that takes a positive integer as input and reverses the digits of the number using a while loop.
+
+#code 
+
+n = 12564
+reverse = 0
+
+while n > 0:
+    digit = n % 10
+    reverse = (reverse*10)+digit
+    n = n // 10
+
+print(reverse)
