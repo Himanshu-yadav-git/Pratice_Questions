@@ -1,0 +1,13 @@
+# Write a Python program that takes an array of integers and finds the largest element without using built-in functions like max().
+
+#code 
+
+nums = [55,32,-97,99,3,67]
+n = len(nums)
+highest = nums[0]
+
+for i in range(0,n):
+    if nums[i] > highest:
+        highest = nums[i]
+
+print(highest)
