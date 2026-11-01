@@ -1,0 +1,11 @@
+# Write a Python function that takes two integers, i and n, and prints numbers from N down to 1 using recursion, without using loops.
+
+#code 
+
+def fxn(i,n):
+    if i > n:
+        return
+    fxn(i+1,n)
+    print(i)
+
+fxn(1,10)
