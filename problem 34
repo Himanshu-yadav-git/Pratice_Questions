@@ -1,0 +1,11 @@
+# Write a Python function that calculates the sum of natural numbers from 1 to N using recursion, without using loops.
+
+#code 
+
+def fxn(sum, i, n):
+    if i > n:
+        return sum
+
+    return fxn(sum+i, i+1, n)
+
+print(fxn(0, 1, 10))
