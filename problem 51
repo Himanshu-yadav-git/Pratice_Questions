@@ -1,0 +1,16 @@
+# Practice Problem: Write a program that counts how many times each word appears in a given paragraph and stores these counts in a dictionary
+
+#code 
+
+text = "apple banana apple cherry banana apple"
+
+list = text.split(" ")
+dict = {}
+
+for i in list:
+    if i not in dict:
+        dict[i] = 1
+    else:
+        dict[i] += 1
+
+print(dict)
