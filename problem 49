@@ -1,0 +1,16 @@
+# Practice Problem: Start with a list of 10 numbers. Iterate through them and sort them into two separate lists: one for even numbers and one for odd numbers.
+
+#code 
+
+nums = [5,6,50,42,83,91,85]
+list_even = []
+list_odd = []
+for i in nums:
+    if i % 2 == 0:
+        list_even.append(i)
+
+    elif i % 2 != 0:
+        list_odd.append(i)
+
+print(list_even)
+print(list_odd)
