@@ -1,0 +1,17 @@
+# Practice Problem: Write a program to find all prime numbers up to 20, but only print every second (alternate) prime number found.
+
+#code 
+
+list = []
+
+for i in range(2,21):
+    for j in range(2,i):
+        if i % j == 0:
+            break
+
+    else:
+        list.append(i)
+
+n = len(list)
+for i in range(0,n,2):
+    print(list[i])
