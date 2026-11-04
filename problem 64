@@ -1,0 +1,12 @@
+# Practice Problem: Write a program that prints all integers from 1 to 100 on a single line, separated by spaces.
+
+# code 
+
+public class Main {
+    public static void main(String[] args){
+        for (int i = 1; i < 101; i++){
+            System.out.print(i + " ");
+        }
+    }
+
+}
