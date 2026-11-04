@@ -1,0 +1,44 @@
+# Practice Problem: Write a program that reads two numbers and an operator (+, -, *, /) from the user and prints the result of the chosen operation.
+
+# code 
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter your first number: ");
+        int a = sc.nextInt();
+
+        System.out.print("Enter your second number: ");
+        int b = sc.nextInt();
+
+        System.out.print("Enter your operation (+, -, *, /): ");
+        String c = sc.next();
+
+        if (c.equals("+")) {
+            System.out.println("The sum is: " + (a + b));
+        }
+        else if (c.equals("-")) {
+            System.out.println("The subtraction is: " + (a - b));
+        }
+        else if (c.equals("/")) {
+            if (b != 0) {
+                double result = (double) a / b;
+                System.out.println("The division is: " + result);
+            } else {
+                System.out.println("Cannot divide by zero.");
+            }
+        }
+        else if (c.equals("*")) {
+            System.out.println("The multiplication is: " + (a * b));
+        }
+        else {
+            System.out.println("Invalid operation!");
+        }
+
+        sc.close();
+    }
+}
