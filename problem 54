@@ -1,0 +1,15 @@
+# Practice Problem: Write a program that swaps the values of two variables using a third temporary variable and prints the result
+
+# code
+
+public class Main {
+    public static void main(String[] args){
+        int a = 50;
+        int b = 60;
+        int c = a;
+        a = b;
+        b = c;
+        System.out.println("The value of a: "+ a);
+        System.out.println("The value of b: "+ b);
+    }
+}
