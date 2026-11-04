@@ -1,0 +1,18 @@
+# Practice Problem: Write a program that swaps the values of two integer variables without using a third temporary variable, relying only on arithmetic operations.
+
+#code 
+
+public class Main {
+    public static void main(String[] args) {
+
+        int a = 50;
+        int b = 60;
+
+        a = a + b;
+        b = a - b;
+        a = a - b;
+
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+    }
+}
