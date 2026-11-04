@@ -1,0 +1,16 @@
+# Practice Problem: Write a program that takes a number as input and prints both its square and its cube.
+
+# code 
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your number: ");
+        double a = sc.nextInt();
+        double square = Math.pow(a,2);
+        double cube = Math.pow(a,3);
+        System.out.println("The square root is: "+ square);
+        System.out.println("The cube is: "+ cube);
+    }
+}
