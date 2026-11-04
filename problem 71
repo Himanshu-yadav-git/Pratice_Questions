@@ -1,0 +1,21 @@
+# Practice Problem: Write a program that reads an integer and prints it with its digits in reverse order (e.g., 123 becomes 321).
+
+# code 
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your number: ");
+        int a = sc.nextInt();
+        int rev = 0;
+
+        while (a > 0) {
+            int id = a % 10;
+            rev = (rev*10)+ id;
+            a = a / 10;
+        }
+        System.out.println(rev);
+    }
+}
