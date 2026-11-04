@@ -1,0 +1,17 @@
+# Practice Problem: Write a program that takes two numbers as input and prints their sum.
+
+#code 
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your first number: ");
+        int a = sc.nextInt();
+        System.out.println("Enter your second number: ");
+        int b= sc.nextInt();
+
+        int sum = a+b;
+        System.out.println("The sum of these numbers is: "+ sum);
+    }
+}
