@@ -1,21 +1,25 @@
-# Practice Problem: Write a program that takes the length and width of a rectangle as input and calculates and prints both its area and its perimeter.
+# Practice Problem: Write a program that calculates simple interest given a principal amount, an annual interest rate, and a time period in years
 
 #code 
 
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter your length: ");
-        int a = sc.nextInt();
-        System.out.println("Enter your breath: ");
-        int b = sc.nextInt();
 
-        int area = a*b;
-        int perimeter = 2*(a+b);
+        System.out.print("Enter principal amount: ");
+        double principal = sc.nextDouble();
 
-        System.out.println("The area is: "+ area);
-        System.out.println("The perimeter is: "+ perimeter);
+        System.out.print("Enter annual interest rate (%): ");
+        double rate = sc.nextDouble();
+
+        System.out.print("Enter time period (years): ");
+        double time = sc.nextDouble();
+
+        double SI = (principal * rate * time) / 100;
+
+        System.out.println("Simple Interest = " + SI);
     }
 }
