@@ -1,0 +1,28 @@
+# Practice Problem: Write a program that checks whether a given number is an Armstrong number. A number is Armstrong if the sum of its digits each raised to the power of the total number of digits equals the number itself
+
+# code 
+
+public class Main {
+    public static void main(String[] args) {
+
+        int a = 153;
+        int original = a;
+
+        String str = String.valueOf(a);
+        int hod = str.length();
+
+        int h = 0;
+
+        while (a > 0) {
+            int id = a % 10;
+            h += (int) Math.pow(id, hod);
+            a = a / 10;
+        }
+
+        if (h == original) {
+            System.out.println("Armstrong number");
+        } else {
+            System.out.println("Not an Armstrong number");
+        }
+    }
+}
