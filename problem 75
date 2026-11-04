@@ -1,0 +1,22 @@
+# Practice Problem: Write a program that reads a number n and prints a right-angled triangle made of asterisks, where row i contains i stars.
+
+# code 
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your number: ");
+        int a = sc.nextInt();
+        int i;
+        int j;
+
+        for (i= 1; i < a+1; i++){
+            for(j = 1; j < i+1; j++){
+                System.out.print("*");
+            }
+            System.out.println(" ");
+        }
+    }
+}
