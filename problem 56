@@ -1,0 +1,21 @@
+# Practice Problem: Write a program that takes the length and width of a rectangle as input and calculates and prints both its area and its perimeter.
+
+# code 
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your length: ");
+        int a = sc.nextInt();
+        System.out.println("Enter your breath: ");
+        int b = sc.nextInt();
+
+        int area = a*b;
+        int perimeter = 2*(a+b);
+
+        System.out.println("The area is: "+ area);
+        System.out.println("The perimeter is: "+ perimeter);
+    }
+}
