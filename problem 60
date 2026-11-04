@@ -1,0 +1,27 @@
+# Practice Problem: Write a program that reads three integers from the user and prints the largest among them.
+
+#code 
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your first number: ");
+        int a = sc.nextInt();
+        System.out.println("Enter your second number: s");
+        int b = sc.nextInt();
+        System.out.println("Enter your thrid number: ");
+        int c = sc.nextInt();
+
+        if (a >= b && a >= c) {
+            System.out.println(a + " is the greatest");
+        }
+        else if (b >= a && b >= c) {
+            System.out.println(b + " is the greatest number");
+        }
+        else {
+            System.out.println(c + " is the greatest number");
+        }
+    }
+}
