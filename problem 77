@@ -1,0 +1,22 @@
+# Practice Problem: Write a program that calculates and prints both the sum and the average of all elements in an integer array.
+
+# code 
+
+public class Main {
+    public static void main(String[] args) {
+
+        int[] arr = {10, 20, 30, 40, 50};
+        int sum = 0;
+        int n = arr.length;
+
+        for (int i : arr) {
+            sum += i;
+        }
+
+        System.out.println("Sum: " + sum);
+
+        double avg = (double) sum / n;
+
+        System.out.println("Average: " + avg);
+    }
+}
