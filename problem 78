@@ -1,0 +1,22 @@
+# Practice Problem: Write a program that finds and prints both the smallest and the largest elements in an integer array
+
+# code 
+
+public class Main {
+    public static void main(String[] args){
+        int [] arr = {34, 7, 23, 89, 12, 55};
+        int smallest = arr[0];
+        int largest = arr[0];
+
+        for (int i: arr){
+            if (i >= largest){
+                largest = i;
+            }
+            if (i <= smallest){
+                smallest = i;
+            }
+        }
+        System.out.println("The smallest number is: "+ smallest);
+        System.out.println("The largest number is: "+ largest);
+    }
+}
