@@ -1,0 +1,21 @@
+# Practice Problem: Write a program that removes all whitespace characters from a given string and prints the result
+
+# code 
+
+public class Main {
+    public static void main(String[] args) {
+
+        String str = "Hello World Java Programming";
+
+        StringBuilder result = new StringBuilder();
+
+        for (char ch : str.toCharArray()) {
+            if ( ch!= ' ') {
+                result.append(ch);
+            }
+        }
+
+        System.out.println("Original String: " + str);
+        System.out.println("After removing whitespace: " + result);
+    }
+}
