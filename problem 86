@@ -1,0 +1,17 @@
+# Practice Problem: Write a program that takes a mixed-case string and prints both its fully uppercase and fully lowercase versions.
+
+# code 
+
+import java.util.Locale;
+
+public class Main {
+    public static void main(String[] args){
+        String str = "Hello, World!";
+
+        String lower = str.toLowerCase();
+        String upper = str.toUpperCase();
+
+        System.out.println("Upper Case: "+ upper);
+        System.out.println("Lower Case: "+ lower);
+    }
+}
