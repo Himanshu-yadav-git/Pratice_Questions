@@ -1,0 +1,27 @@
+# Practice Problem: Write a program that merges two separate integer arrays into a single new array and prints all the elements
+
+# code 
+
+import org.w3c.dom.ls.LSOutput;
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args){
+        int [] arr1 = {1,2,3};
+        int [] arr2 = {4,5,6};
+        int n1 = arr1.length;
+        int n2 = arr2.length;
+        int n3 = n1+n2;
+        int [] arr3 = new int[n3];
+
+        for (int i =0; i < n1; i++){
+            arr3[i] = arr1[i];
+        }
+        for(int j = 0; j < n2; j++){
+            arr3[n1+j] = arr2[j];
+        }
+        for (int el: arr3){
+            System.out.print(el+ " ");
+        }
+    }
+}
