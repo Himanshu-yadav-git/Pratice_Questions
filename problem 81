@@ -1,0 +1,27 @@
+# Practice Problem: Write a program that scans an integer array and prints any elements that appear more than once.
+
+# code
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int[] arr = {1, 3, 4, 2, 3, 5, 4, 6, 5, 5, 4, 1};
+        int n = arr.length;
+
+        Set<Integer> dup = new HashSet<>();
+
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = i + 1; j < n; j++) {
+                if (arr[i] == arr[j]) {
+                    dup.add(arr[i]);
+                }
+            }
+        }
+
+        for (int el : dup) {
+            System.out.println("Duplicate number: " + el);
+        }
+    }
+}
