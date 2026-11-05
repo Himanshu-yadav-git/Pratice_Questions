@@ -1,0 +1,15 @@
+# Practice Problem: Write a program that finds the length of a string by iterating through its characters manually, without using the built-in length() metho
+
+# code 
+
+public class Main {
+    public static void main(String[] args){
+        String a = "Hello, World!";
+        int count = 0;
+
+        for (char ch: a.toCharArray()){
+            count++;
+        }
+        System.out.println(count);
+    }
+}
