@@ -1,0 +1,46 @@
+# Practice Problem: Create a BankAccount class with a private balance field and public methods for getting the balance, setting an initial balance, depositing money, and withdrawing money. Demonstrate all four methods from main.
+
+# code 
+
+public class Main {
+
+    public static class BankAccount {
+
+        private double balance;
+
+        public void setBalance(double balance) {
+            this.balance = balance;
+        }
+
+        public double getBalance() {
+            return balance;
+        }
+
+        public double deposit(double val) {
+            balance += val;
+            return balance;
+        }
+
+        public double withdrawing(double val) {
+            balance -= val;
+            return balance;
+        }
+    }
+
+    public static void main(String[] args) {
+
+        BankAccount b = new BankAccount();
+
+        b.setBalance(56565.0);
+
+        System.out.println("Initial Balance: " + b.getBalance());
+
+        double a = b.deposit(5000);
+        System.out.println("After Deposit: " + a);
+
+        double a1 = b.withdrawing(5000);
+        System.out.println("After Withdrawal: " + a1);
+
+        System.out.println("Final Balance: " + b.getBalance());
+    }
+}
