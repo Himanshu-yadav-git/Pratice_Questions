@@ -1,0 +1,16 @@
+# Practice Problem: Write a program with a reusable static method named isEven that takes an integer and returns true if it is even and false if it is odd
+
+#code 
+
+public class Main {
+    static Boolean isEven(int a ){
+        boolean even = false;
+        if (a % 2 == 0){
+            even = true;
+        }
+        return even;
+    }
+    public static void main(String[] args) {
+        System.out.println(isEven(50));
+    }
+}
