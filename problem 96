@@ -1,0 +1,24 @@
+# Practice Problem: Write a Java program that demonstrates static variables and static methods by tracking how many objects of a class have been created.
+
+# code 
+
+public class Main {
+    public static class counting{
+        static int count = 0;
+
+        counting(){
+            count++;
+        }
+        public int getCount(){
+            return count;
+        }
+
+    }
+
+    public static void main(String[] args){
+        counting c1 = new counting();
+        counting c2 = new counting();
+
+        System.out.println(c1.getCount());
+    }
+}
