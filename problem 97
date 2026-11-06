@@ -1,0 +1,25 @@
+# Practice Problem: Write a Java program to create an ArrayList of integers, add elements to it, and print the entire list.
+
+# code 
+
+import java.util.ArrayList;
+
+public class Main {
+    public static class arrayList{
+        ArrayList<Integer> list = new ArrayList<>();
+
+        public ArrayList<Integer> adding(int ...arr){
+            for (int i: arr){
+                list.add(i);
+            }
+            System.out.println(list);
+            return list;
+        }
+    }
+
+    public static void main(String[] args){
+        arrayList a = new arrayList();
+
+        a.adding(5,55,45,45,4,12,1,54,84);
+    }
+}
