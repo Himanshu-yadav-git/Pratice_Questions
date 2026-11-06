@@ -1,0 +1,22 @@
+# Practice Problem: Write a Java program that demonstrates method overriding by having a subclass provide its own implementation of a parent class method.
+
+# code 
+
+public class Main {
+    public static class animal{
+        public void dog(){
+            System.out.println("bark");
+        }
+    }
+    public static class animal1 extends animal{
+        public void dog(){
+            System.out.println("Bark1");
+        }
+    }
+
+    public static void main(String[] args){
+        animal1 d = new animal1();
+
+        d.dog();
+    }
+}
