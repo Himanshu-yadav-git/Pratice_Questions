@@ -1,0 +1,23 @@
+# Practice Problem: Create a Student class with fields for name and rollNumber, and a displayInfo() method that prints those details. In a separate main method, create a Student object, assign values to its fields, and call the method.
+
+#code 
+
+public class Main {
+    public static class Students{
+        String name;
+        int rollnumber;
+
+        public void displayinfo(){
+            System.out.println("The name of student is: "+ name);
+            System.out.println("The roll number of "+ name+ " is "+rollnumber);
+        }
+    }
+
+    public static void main(String[] args){
+        Students s = new Students();
+        s.name = "Himanshu";
+        s.rollnumber = 565;
+
+        s.displayinfo();
+    }
+}
