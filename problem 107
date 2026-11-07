@@ -1,0 +1,15 @@
+# Practice Problem: Write a program to capitalize the first letter of each word in a given string without using the built-in .title() method.
+
+#code
+
+text = "hello world from python"
+
+text1 = text.split()
+
+d = text
+
+for i in text1:
+    c = i.capitalize()
+    d = d.replace(i, c)
+
+print(d)
