@@ -1,0 +1,13 @@
+# Practice Problem: Write a program to check if a user-entered string contains any numeric digits. Use a for loop to examine each character.
+
+# code 
+
+string = input("Enter your string: ")
+num = False
+
+for i in string:
+    if i in {"1","2","3","4","5","6","7","8","9","0"}:
+        num = True
+        break
+
+print(num)
