@@ -1,0 +1,20 @@
+# Practice Problem: Write a Java program to count how many times each word appears in a given sentence using a HashMap.
+
+# code 
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args){
+        HashMap<String,Integer> map = new HashMap<>();
+        String sentence = "the quick brown fox jumps over the lazy dog the fox runs";
+
+        String [] list = sentence.split(" ");
+
+        for (String e: list){
+            map.put(e,map.getOrDefault(e,0)+1);
+        }
+
+        System.out.println(map);
+    }
+}
