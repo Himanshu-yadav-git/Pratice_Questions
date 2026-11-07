@@ -1,0 +1,8 @@
+# Practice Problem: Ask the user for a sentence. Replace every empty space in that sentence with an underscore (_) and print the final result.
+
+# code 
+
+a = "I love coding in Python"
+
+b = a.replace(" ", "_")
+print(b)
