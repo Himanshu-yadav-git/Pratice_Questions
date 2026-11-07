@@ -1,0 +1,10 @@
+# Practice Problem: Create a countdown timer that starts from a given number and counts down to zero using a while loop.
+
+# code 
+
+a = int(input("Enter your number: "))
+
+while a > 0:
+    print(a)
+    a -= 1
+print("Blast off!")
