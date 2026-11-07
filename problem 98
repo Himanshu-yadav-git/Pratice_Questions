@@ -1,0 +1,47 @@
+# Practice Problem: Write a Java program to add elements to an ArrayList, remove a specific element, and search for another element.
+
+# code 
+
+import java.util.*;
+
+public class Main {
+    public static class arlist{
+        ArrayList<String> list = new ArrayList<>();
+
+        public ArrayList<String> adding(String s){
+            list.add(s);
+            return list;
+        }
+
+        public ArrayList<String> removing(String s1){
+            if (!list.contains(s1)){
+                System.out.println("Element not found in list.");
+            }
+            else{
+                list.remove(s1);
+            }
+            return list;
+        }
+
+        public Boolean finding(String s2){
+            Boolean exist = false;
+
+            if(list.contains(s2)){
+                exist = true;
+            }
+            return exist;
+        }
+    }
+
+    public static void main(String[] args){
+        arlist a = new arlist();
+
+        a.adding("HELLO");
+        a.adding("Kaise ho");
+        System.out.println(a.list);
+        a.removing("HELLO");
+        System.out.println(a.list);
+        Boolean c = a.finding("Kaise ho");
+        System.out.println(c);
+    }
+}
