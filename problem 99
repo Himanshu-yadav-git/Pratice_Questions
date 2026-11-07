@@ -1,0 +1,30 @@
+# Practice Problem: Write a Java program to sort an ArrayList of strings in alphabetical order.
+
+# code
+
+
+import java.util.*;
+
+public class Main {
+    public static class sorting {
+        ArrayList<String> name = new ArrayList<>();
+
+        public ArrayList<String> adding(String... arr) {
+            for (String e : arr) {
+                name.add(e);
+            }
+
+            name.sort(null);
+
+            return name;
+        }
+    }
+
+    public static void main(String[] args) {
+        sorting s = new sorting();
+
+        s.adding("Charlie", "Alice", "Bob", "David");
+
+        System.out.println(s.name);
+    }
+}
