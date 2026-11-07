@@ -1,0 +1,17 @@
+# Practice Problem: Write a Java program to create a HashMap of student names and their marks, then iterate over it to print each key-value pair.
+
+# code 
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args){
+        HashMap<String, Integer> map = new HashMap<>();
+
+        map.put("Alice",85);
+        map.put("bob",60);
+        map.put("charlie",90);
+
+        System.out.println(map.entrySet());
+    }
+}
