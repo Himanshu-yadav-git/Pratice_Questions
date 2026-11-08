@@ -1,0 +1,19 @@
+# Practice Problem: Write a program that counts the total number of vowels and consonants in a given sentence, ignoring spaces and special characters.
+
+# code 
+
+sentence = "Loops are Fun!"
+vowels = "aeiou"
+
+v_count = 0
+c_count = 0
+
+for char in sentence.lower():
+    if char.isalpha():
+        if char in vowels:
+            v_count += 1
+        else:
+            c_count += 1
+
+print("The total number of vowels are: ",v_count)
+print("The total number consonant are: ",c_count)
