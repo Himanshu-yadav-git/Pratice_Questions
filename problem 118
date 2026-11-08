@@ -1,0 +1,27 @@
+# Practice Problem: Write a program to find the largest and smallest digit within a given integer (e.g., in 75869, the largest is 9 and the smallest is 5).
+
+# code 
+
+num = 75869
+
+list = []
+
+while num > 0:
+    digit = num % 10
+    list.append(digit)
+    num = num // 10
+
+n = len(list)
+largest = list[0]
+smallest = list[0]
+
+for i in range(0,n):
+    if list[i] > largest:
+        largest = list[i]
+
+for i in range(0,n):
+    if list[i] < smallest:
+        smallest = list[i]
+
+print("The largest digit in this number is: ",largest)
+print("The smallest digit in this number is: ",smallest)
