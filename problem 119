@@ -1,0 +1,14 @@
+# Practice Problem: The Collatz conjecture states that if you start with any positive integer n, and if n is even, divide it by 2 if n is odd, multiply it by 3 #and add 1. Repeat the process. The sequence will always eventually reach 1. Write a program to print this sequence for a given number.
+
+# code 
+
+a = int(input("Enter your positive integer: "))
+
+while a != 1:
+    if a % 2 == 0:
+        a = a // 2
+        print(a)
+
+    elif a % 2 != 0:
+        a = (a*3)+1
+        print(a)
