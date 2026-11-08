@@ -1,0 +1,15 @@
+# Practice Problem: Given a list, iterate it in reverse order and print each element.
+
+# code 
+
+list1 = [10, 20, 30, 40, 50]
+i = 0
+n = len(list1)
+j = n-1
+
+while i < j and i != j:
+    list1[i],list1[j] = list1[j], list1[i]
+    i += 1
+    j -= 1
+
+print(list1)
