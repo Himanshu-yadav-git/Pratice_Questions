@@ -1,0 +1,22 @@
+# Problem Statement:
+
+# Write a Java program to print a hollow square pattern of stars (*) with n rows and n columns.
+
+# code 
+
+public class Main {
+    public static void main(String[] args){
+        int a = 10;
+        for (int i = 1 ;i < a+1 ;i++){
+            for (int j = 1; j <a+1 ;j++){
+                if (i == 1 || i == a || j == 1 || j == a){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println("");
+        }
+    }
+}
