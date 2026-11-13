@@ -1,0 +1,22 @@
+# Practice Problem: Create a function that takes a string and returns a count of how many times each character appears. Ignore spaces and make it case-insensitive.
+
+# code 
+
+text = "Python Programming"
+def counter(text):
+    text1 = text.lower()
+    count = {}
+
+    for i in text1:
+        if i == " ":
+            continue
+
+        if i in count:
+            count[i] += 1
+            
+        else:
+            count[i] = 1
+    return count
+
+a = counter(text)
+print(a)
