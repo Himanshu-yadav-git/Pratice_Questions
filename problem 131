@@ -1,0 +1,14 @@
+# Practice Problem: Given a list of numbers, create a new list where each element is the sum of all elements from the original list up to that position.
+
+# code 
+
+nums = [1, 2, 3, 4]
+sum = 0
+cumulative_sum = []
+
+for i in nums:
+    sum += i
+    cumulative_sum.append(sum)
+
+print(cumulative_sum)
+    
