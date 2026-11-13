@@ -1,0 +1,12 @@
+# Practice Problem: Given a 2D list (matrix), find the row and column index of a target value.
+
+# code 
+
+matrix = [[10, 20], [30, 40], [50, 60]]
+target = 30
+n = len(matrix)
+
+for i in range(0,n):
+    for j in range(0,len(matrix[i])):
+        if matrix[i][j] == target:
+            print("Target",target,"found at Row:",i,"Column:",j)
