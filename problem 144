@@ -1,0 +1,17 @@
+# Practice Problem: Write a function that merges two dictionaries. If a key exists in both dictionaries, sum their values. If a key exists in only one, include it # as is.
+
+# code 
+
+dict_a = {'a': 10, 'b': 20} 
+dict_b = {'b': 5, 'c': 15}
+
+def mergedict(dict_a,dict_b):
+    result = dict_b.copy()
+
+    for key,value in dict_a.items():
+        result[key] = result.get(key,0)+value
+
+    return result
+
+a = mergedict(dict_a,dict_b)
+print(a)
