@@ -1,0 +1,12 @@
+# Practice Problem: Given a nested list (a list containing other lists), write a program to “flatten” it into a single list containing all the individual elements.
+
+# code 
+
+nested_list = [[10, 20], [30, 40], [50, 60]]
+nums = []
+n = len(nested_list)
+
+for i in range(0,n):
+    for j in range(0,2):
+        nums.append(nested_list[i][j])
+print(nums)
