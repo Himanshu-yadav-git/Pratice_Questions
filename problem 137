@@ -1,0 +1,15 @@
+# Practice Problem: Write a program to count the frequency of each word in a given string.
+
+# code 
+
+text = "apple banana apple orange banana apple"
+list = text.split(" ")
+freq = {}
+
+for i in list:
+    if i in freq:
+        freq[i] += 1
+    else:
+        freq[i] = 1
+
+print(freq)
