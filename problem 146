@@ -1,0 +1,25 @@
+# Practice Problem: Given a sentence, reverse each individual word within the string while maintaining the original word order.
+
+# code 
+
+text = "Python is awesome"
+result = []
+
+def reverse(chars):
+    i = 0
+    j = len(chars) - 1
+
+    while i < j:
+        chars[i], chars[j] = chars[j], chars[i]
+        j -= 1
+        i += 1
+
+    return chars
+
+text1 = text.split(" ")
+
+for i in range(len(text1)):
+    a = reverse(list(text1[i]))
+    result.append("".join(a))
+
+print(" ".join(result))
