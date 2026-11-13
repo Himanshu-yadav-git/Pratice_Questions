@@ -1,0 +1,21 @@
+# Problem Statement: Print a Continuous Number Triangle Using Nested Loops
+# Write a Java program to print a right-angled triangle pattern consisting of consecutive natural numbers.
+
+# code 
+
+public class Main {
+    public static void main(String[] args){
+        int count = 1;
+        int k = 1;
+
+        for (int i = 1; i < 6; i++){
+            while (k <= i){
+                System.out.print(count+" ");
+                count++;
+                k++;
+            }
+            k = 1;
+            System.out.println();
+        }
+    }
+}
