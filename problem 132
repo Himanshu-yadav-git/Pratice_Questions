@@ -1,0 +1,12 @@
+# Practice Problem: Given a dictionary of student scores, create a new dictionary that only includes students who scored above a certain threshold (e.g., 75).
+
+# code 
+
+scores = {"Alice": 85, "Bob": 70, "Charlie": 95, "David": 60}
+passing_students = {}
+marks = scores.items()
+
+for name,score in marks:
+    if score >= 75:
+        passing_students[name] = score
+print(passing_students)
